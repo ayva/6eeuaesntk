@@ -7,7 +7,16 @@
     <th>Year</th>
     <th>When I Bought It</th>
   </tr>
-  <!-- hmmm I seem to be forgetting something -->
+  <% @shoes.each do |shoe| %>
+    <tr>
+      <th>shoe.brand</th>
+      <th> shoe.model</th>
+      <th>shoe.year</th>
+      <th>shoe.purchase_date</th>
+    </tr>
+
+ <%end%>
+
 </table>
 
 <br>
